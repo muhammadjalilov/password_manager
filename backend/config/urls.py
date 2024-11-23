@@ -23,6 +23,7 @@ from apps.login.urls import token_urlpatterns
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('apps.accounts.urls')),
+    path('password-manager/', include('apps.password_manage.urls')),
     # YOUR PATTERNS
     path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
     # Optional UI:
